@@ -17,12 +17,26 @@
       <div class="row">
         <div class="col-sm header">
           <h1>Unity<br /><span style="color: #a70309">4</span>Ride</h1>
-          <i class="fa-solid fa-bars"></i>
+          <button
+            class="btn btn-secondary"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#accueil">Accueil</a></li>
+            <li><a class="dropdown-item" href="#sport">Nos sports</a></li>
+            <li><a class="dropdown-item" href="#session">Adhésion</a></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
       <!---------------------ACCUEIL---------------------->
       <div class="row">
-        <div class="col-sm accueil">
+        <div class="col-sm accueil" id="accueil">
           <img src="./assets/banner1.png" alt="" />
           <img src="./assets/banner2.png" alt="" />
           <img src="./assets/banner3.png" alt="" />
@@ -73,6 +87,100 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div>
+        <div class="banniere" style="background: black">
+          <p style="color: #f8f8f8">Club de sport de glisse</p>
+          <p style="color: #ffa2a4">nantais</p>
+        </div>
+      </div>
+      <!---------------------SPORT DIVERS---------------------->
+      <div class="row">
+        <div class="titre-sport" id="sport">
+          <h2>NOS SPORTS</h2>
+        </div>
+        <div class="col-sm sport">
+          <div>
+            <img src="./assets/sport1.png" alt="BMX" />
+            <p>BMX <br />FREESTYLE</p>
+          </div>
+          <div>
+            <img src="./assets/sport2.png" alt="ROLLER" />
+            <p>ROLLER <br />FREESTYLE</p>
+          </div>
+          <div>
+            <img src="./assets/sport3.png" alt="SCOOT" />
+            <p>TROTINETTE <br />FREESTYLE</p>
+          </div>
+        </div>
+      </div>
+      <!---------------------LES SESSIONS---------------------->
+      <div class="row">
+        <div class="col-sm session" id="session">
+          <div class="banniere" style="background: black">
+            <p style="color: #f8f8f8">Nos sessions adhérents</p>
+            <p style="color: #ffa2a4">au hangar skatepark</p>
+          </div>
+          <p class="p">
+            les session pour les adhérents sont le lundi et le jeudi de 19h à
+            21h30
+          </p>
+          <div class="adresse">
+            <img src="./assets/hangar.png" alt="hangar" />
+            <p>
+              9 all, des vinaigriers <br />
+              44300 Nantes
+            </p>
+          </div>
+          <p class="p">
+            vous voulez nous rejoindre ? c'est
+            <a href="#" style="color: #ffa2a4">ici</a>
+          </p>
+        </div>
+      </div>
+      <!---------------------FOOTER---------------------->
+      <div class="row">
+        <div class="col-sm footer" id="contact">
+          <div class="banniere" style="background: black">
+            <p style="color: #f8f8f8">Des questions</p>
+          </div>
+          <div class="row form">
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nom"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Prénom"
+                aria-label="Last name"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+              />
+            </div>
+            <div class="col-6" style="height: 10rem">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Votre question"
+                aria-label="Questionnaire"
+                style="height: 10rem"
+              />
+            </div>
+          </div>
+          <div class="banniere" style="background: black">
+            <p style="color: #f8f8f8">Tout droit réserver</p>
+          </div>
         </div>
       </div>
     </div>

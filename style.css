@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +13,10 @@ html {
 body {
   font-size: 1.4rem; /*soit 10px*/
   background: #f8f8f8;
+  font-family: "Bitter", serif;
 }
 
 /***************************HEADER***************************/
-@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&display=swap");
 
 .header {
   display: flex;
@@ -23,21 +25,74 @@ body {
 }
 .header h1 {
   font-size: 6rem;
-  font-family: "Bitter", serif;
-  font-weight: 900;
 }
 .header i {
   font-size: 4rem;
 }
-/***************************ACCEUILL***************************/
+.header li {
+  font-size: 2rem;
+}
+
+/***************************ACCEUIL***************************/
 .accueil {
   display: flex;
   justify-content: center;
 }
+
+.banniere {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .accueil img {
   border: 2px solid #f8f8f8;
 }
+.carousel img {
+  border: 2px solid #f8f8f8;
+}
 
+/***************************SPORT DIVERS***************************/
+.titre-sport h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+.sport {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sport p {
+  transform: translateY(-150%);
+  color: #f8f8f8;
+}
+
+/***************************LES SESSIONS***************************/
+.adresse {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  width: 60%;
+}
+.adresse img {
+  border-radius: 8px;
+}
+.session .p {
+  margin: 3rem;
+}
+
+/***************************FOOTER***************************/
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+/***************************RESPONSIVE***************************/
 @media (max-width: 648px) {
   .accueil {
     display: none;
@@ -48,10 +103,13 @@ body {
   .carousel {
     display: none;
   }
-}
-
-@media (max-width: 973px) {
   .accueil img:nth-child(2n) {
     display: none;
+  }
+}
+
+@media (min-width: 973px) {
+  .accueil img:nth-child(2n) {
+    display: block;
   }
 }
